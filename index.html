@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monblan Profile</title>
+
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/calendarify@latest/dist/calendarify.min.css"/>
+  <link rel="stylesheet" href="css/styles.css">
+
+
+</head>
+<body>
+<header>
+  <section class="container header-container">
+    <div class="logo"><img src="assets/images/logo.png" alt="Logo"></div>
+
+    <div class="header-content">
+      <div class="header-content__title-date">
+        <h1 class="header-content__title">monblanproject</h1>
+        <div class="header-content__date">Start on 17-02-2016</div>
+      </div>
+
+      <div class="header-content__numbers">
+        <p>
+          <b>870</b> posts</p>
+        <p>
+          <b>11,787</b> followers</p>
+        <p>
+          <b>112</b> following</p>
+      </div>
+
+      <div class="datepicker-group">
+        <div class="datepicker-group__title">Date</div>
+        <div class="datepicker">
+          <input type="text" class="datepicker__input" id="date-from"/>
+          <button class="datepicker__close">
+            <svg class="close-icon" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M11.6569 10.2426L7.41421 6L11.6569 1.75736L10.2426 0.34315L6 4.58579L1.75736 0.34315L0.343146 1.75736L4.58579 6L0.343146 10.2426L1.75736 11.6569L6 7.41422L10.2426 11.6569L11.6569 10.2426Z"
+                  fill="#5F5F5F"/>
+            </svg>
+
+          </button>
+          <button id="toggle-from" class="datepicker__toggle">
+            <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                  d="M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z"
+                  fill="#5F5F5F"/>
+              <path
+                  d="M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z"
+                  fill="#5F5F5F"/>
+            </svg>
+          </button>
+        </div>
+        <div class="datepicker">
+          <input type="text" class="datepicker__input" id="date-to"/>
+          <button class="datepicker__close">
+            <svg class="close-icon" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                  d="M11.6569 10.2426L7.41421 6L11.6569 1.75736L10.2426 0.34315L6 4.58579L1.75736 0.34315L0.343146 1.75736L4.58579 6L0.343146 10.2426L1.75736 11.6569L6 7.41422L10.2426 11.6569L11.6569 10.2426Z"
+                  fill="#5F5F5F"/>
+            </svg>
+
+          </button>
+          <button class="datepicker__toggle">
+            <svg class="calendar-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                  d="M7 11H9V13H7V11ZM7 15H9V17H7V15ZM11 11H13V13H11V11ZM11 15H13V17H11V15ZM15 11H17V13H15V11ZM15 15H17V17H15V15Z"
+                  fill="#5F5F5F"/>
+              <path
+                  d="M5 22H19C20.103 22 21 21.103 21 20V6C21 4.897 20.103 4 19 4H17V2H15V4H9V2H7V4H5C3.897 4 3 4.897 3 6V20C3 21.103 3.897 22 5 22ZM19 8L19.001 20H5V8H19Z"
+                  fill="#5F5F5F"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+</header>
+<main>
+
+
+  <section class="container">
+    <div class="list-styles">
+      <svg id="block-list-style" class="list-styles__icon active" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+        <rect width="6" height="6"/>
+        <rect x="8" width="6" height="6"/>
+        <rect x="16" width="6" height="6"/>
+
+        <rect y="8" width="6" height="6"/>
+        <rect y="8" x="8" width="6" height="6"/>
+        <rect y="8" x="16" width="6" height="6"/>
+
+
+        <rect y="16" width="6" height="6"/>
+        <rect y="16" x="8" width="6" height="6"/>
+        <rect y="16" x="16" width="6" height="6"/>
+      </svg>
+      <svg id="row-list-style" class="list-styles__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22">
+        <rect width="6" height="6"/>
+        <rect y="8" width="6" height="6"/>
+        <rect y="16" width="6" height="6"/>
+        <rect x="9" y="10" width="15" height="2"/>
+        <rect x="9" y="18" width="15" height="2"/>
+        <rect x="9" y="2" width="15" height="2"/>
+      </svg>
+    </div>
+
+    <div class="card-list blocks">
+
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img src="https://picsum.photos/86" alt="">
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Today</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              128
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              31
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">9-08-2016</div>
+          <div class="card__values">
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#heart"></use>
+              </svg>
+              67
+            </div>
+            <div>
+              <svg class="icon-s">
+                <use xlink:href="./assets/sprites.svg#comment"></use>
+              </svg>
+              22
+            </div>
+          </div>
+        </div>
+        <div class="card__meta">
+          <div class="card__date">Image upload</div>
+          <div class="card__values">
+            11-04-2016
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <button class="load-more">Load more</button>
+  </section>
+
+</main>
+<footer></footer>
+
+<script src="https://kit.fontawesome.com/504ede88cc.js" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/calendarify@latest/dist/calendarify.iife.js"></script>
+<script src="js/index.js"></script>
+
+</body>
+</html>
