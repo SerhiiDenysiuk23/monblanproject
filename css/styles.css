@@ -9,7 +9,7 @@ body {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 61px;
-  background: url(bg-up.svg) no-repeat, url(bg-down.svg) no-repeat right bottom 40px, #fafafa;
+  background: url(../assets/images/bg-up.svg) no-repeat, url(../assets/images/bg-down.svg) no-repeat right bottom 40px, #fafafa;
   display: flex;
   flex-direction: column;
   align-items: center;
